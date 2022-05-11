@@ -62,7 +62,7 @@ if [ -f mdlist.lst ]; then
 		done
 		if [ -f $mfile ]; then
 			# Download all the file links in the links file
-    			cat $mfile | wget -o wget.log -nv --user=***REMOVED*** --password=***REMOVED*** --auth-no-challenge=on --keep-session-cookies -i -
+    			cat $mfile | wget -o wget.log -nv --user=USERNAME --password=PASSOWRD --auth-no-challenge=on --keep-session-cookies -i -
 			rm -f $mfile
 			now=$(date +"%d-%m-%Y %T")
 			echo "Download Complete at $now"
